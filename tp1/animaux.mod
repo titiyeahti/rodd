@@ -1,3 +1,5 @@
+/* question v : la probabilité que i espèces survivent est non linéaire */
+
 /* Paramètres */
 int m = ...;
 int n = ...;
