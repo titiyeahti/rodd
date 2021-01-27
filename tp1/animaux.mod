@@ -29,9 +29,13 @@ dvar boolean prot[h][w];
 
 dvar boolean central[h][w];
 
-minimize sum(i in h) sum(j in w) prot[i][j]*c[i][j];
+dvar int cost;
+
+minimize cost;
 
 subject to {
+  cost ==  sum(i in h) sum(j in w) prot[i][j]*c[i][j];
+
   /* contrainte bord première et dernière colonnes */
   sum(i in h) central[i][1] == 0;
   sum(i in h) central[i][m] == 0;
@@ -64,6 +68,10 @@ main {
 }
 
 execute DISPLAY {
+  write("\ncoûtcoût:");
+  write(cost);
+  write("\n");
+  write("\n");
   write("Estimated survival probability of animal kingdom\n");
   for(var s in sp){
     var res=1;
@@ -82,4 +90,24 @@ execute DISPLAY {
     write(1-res);
     write("\n");
   }
+
+  write("\n\n");
+
+  for(var i in h){
+    for(var j in w){
+      if(central[i][j]==1){
+        write(2);
+      }
+      else {
+        if(prot[i][j]==1){
+          write(1);
+        }
+        else {
+          write(0);
+        }
+      }
+    }
+    write("\n");
+  }
+  write("\n");
 }

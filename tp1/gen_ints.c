@@ -27,6 +27,8 @@
 #define UNIF_ALPHA() 0.5 + UNIF_01()/2.
 #define RAND_INT(a, b) a + rand() % b
 
+
+/* Ajuster la taille des float écrits */
 int main(void){
   FILE* stream;
   int i, j, k, s, n, p, id;
