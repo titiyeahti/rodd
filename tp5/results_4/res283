@@ -1,0 +1,81 @@
+
+<<< setup
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 3 columns.
+Reduced MIP has 61 rows, 108 columns, and 203 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,11 ticks)
+Found incumbent of value 20599,270000 after 0,00 sec. (0,22 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 61 rows, 108 columns, and 203 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,08 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,12 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        20599,2700        0,0000       28  100,00%
+*     0+    0                         1080,0000        0,0000       28  100,00%
+      0     0      111,5046    12     1080,0000      111,5046       28   89,68%
+*     0+    0                          780,0000      111,5046       28   85,70%
+*     0+    0                          776,0100      111,5046       28   85,63%
+      0     0      223,8153    18      776,0100      Cuts: 34       55   71,16%
+      0     0      241,9078    18      776,0100      Cuts: 32       69   68,83%
+      0     0      264,5726    23      776,0100      Cuts: 20       93   65,91%
+      0     0      288,8855    29      776,0100      Cuts: 24      122   62,77%
+      0     0      308,3473    27      776,0100      Cuts: 21      156   60,27%
+      0     0      310,6172    28      776,0100      Cuts: 22      180   59,97%
+      0     0      311,4653    27      776,0100      Cuts: 20      202   59,86%
+*     0+    0                          532,5775      311,4653      202   41,52%
+      0     0      313,1135    31      532,5775      Cuts: 14      219   41,21%
+      0     0      313,5634    31      532,5775      Cuts: 20      242   41,12%
+      0     0      317,1116    31      532,5775       Cuts: 8      276   40,46%
+      0     0      318,7170    35      532,5775      Cuts: 20      301   40,16%
+      0     0      319,1236    36      532,5775      Cuts: 15      315   40,08%
+      0     0      319,7632    27      532,5775      Cuts: 17      331   39,96%
+      0     0      320,1895    27      532,5775   Flowcuts: 8      342   39,88%
+      0     0      320,3685    31      532,5775      Cuts: 10      352   39,85%
+      0     0      320,4337    25      532,5775      Cuts: 12      360   39,83%
+      0     0      320,8102    29      532,5775       Cuts: 6      372   39,76%
+      0     0      321,3416    30      532,5775   Flowcuts: 9      385   39,66%
+      0     0      321,5659    35      532,5775      Cuts: 16      395   39,62%
+      0     0      321,7840    30      532,5775       Cuts: 7      411   39,58%
+      0     0      322,0209    30      532,5775      Cuts: 11      432   39,54%
+      0     0      322,0592    28      532,5775       Cuts: 8      438   39,53%
+      0     0      322,1864    29      532,5775   Flowcuts: 7      452   39,50%
+      0     0      322,2299    34      532,5775   Flowcuts: 6      459   39,50%
+*     0+    0                          466,6475      322,2299      459   30,95%
+*     0+    0                          402,3825      322,2299      459   19,92%
+      0     2      322,2299    34      402,3825      322,2299      459   19,92%
+Elapsed time = 0,10 sec. (48,82 ticks, tree = 0,01 MB, solutions = 7)
+*   490+  275                          396,9800      356,9560     8205   10,08%
+*   949+  123                          396,4750      387,6454    14452    2,23%
+
+Cover cuts applied:  1
+Flow cuts applied:  86
+Mixed integer rounding cuts applied:  23
+Gomory fractional cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =    0,09 sec. (48,33 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,20 sec. (73,66 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,29 sec. (121,99 ticks)
+##11 396.4749999999999 241.9216666666664
+main returns 0
+
+<<< main
+
+
+<<< done
+

@@ -1,0 +1,78 @@
+
+<<< setup
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 3 columns.
+Reduced MIP has 68 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,13 ticks)
+Found incumbent of value 21830,125000 after 0,00 sec. (0,25 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 68 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,09 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,18 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        21830,1250        0,0000       42  100,00%
+*     0+    0                         1080,0000        0,0000       42  100,00%
+      0     0      136,2980    15     1080,0000      136,2980       42   87,38%
+*     0+    0                          710,0000      136,2980       42   80,80%
+*     0+    0                          657,4250      136,2980       42   79,27%
+      0     0      238,0151    23      657,4250      Cuts: 37       77   63,80%
+      0     0      260,2463    20      657,4250      Cuts: 45      114   60,41%
+*     0+    0                          525,4250      260,2463      114   50,47%
+      0     0      288,5887    31      525,4250      Cuts: 33      153   45,08%
+*     0+    0                          469,2250      288,5887      153   38,50%
+      0     0      301,3122    27      469,2250      Cuts: 35      178   35,79%
+      0     0      311,8395    23      469,2250      Cuts: 34      212   33,54%
+      0     0      315,1214    22      469,2250      Cuts: 31      240   32,84%
+      0     0      318,6622    30      469,2250      Cuts: 26      268   32,09%
+*     0+    0                          461,7250      318,6622      268   30,98%
+      0     0      320,8476    25      461,7250      Cuts: 24      286   30,51%
+*     0+    0                          459,7000      320,8476      286   30,20%
+      0     0      323,6926    24      459,7000      Cuts: 22      313   29,59%
+      0     0      323,9188    28      459,7000      Cuts: 14      326   29,54%
+*     0+    0                          440,1250      323,9188      326   26,40%
+      0     0      324,7411    28      440,1250      Cuts: 16      341   26,22%
+      0     0      325,0054    26      440,1250      Cuts: 20      349   26,16%
+      0     0      325,1678    25      440,1250      Cuts: 10      356   26,12%
+      0     0      325,1887    26      440,1250       Cuts: 7      359   26,11%
+      0     0      325,2772    26      440,1250       Cuts: 6      365   26,09%
+      0     0      325,3000    27      440,1250       Cuts: 5      369   26,09%
+*     0+    0                          418,8750      325,3000      369   22,34%
+      0     2      325,3000    27      418,8750      325,3000      369   22,34%
+Elapsed time = 0,07 sec. (34,35 ticks, tree = 0,01 MB, solutions = 10)
+*   113+   74                          408,7000      342,9959     2187   16,08%
+*   208+   97                          395,4750      353,4001     3197   10,64%
+*   226   100      integral     0      388,2500      353,4001     3309    8,98%
+*   252+   72                          386,3250      366,2057     3520    5,21%
+
+Cover cuts applied:  1
+Flow cuts applied:  58
+Mixed integer rounding cuts applied:  29
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0,07 sec. (33,81 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,04 sec. (23,88 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,12 sec. (57,69 ticks)
+##4 386.325 288.6000000000001
+main returns 0
+
+<<< main
+
+
+<<< done
+

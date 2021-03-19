@@ -20,7 +20,7 @@
 
 int main(int argc, char** argv){
 
-  FILE* stream = fopen("plot.dat", "a");
+  FILE* stream = fopen("plot4bis.dat", "a");
   int i;
   char buf[1000];
   char* flag;

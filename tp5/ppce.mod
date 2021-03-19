@@ -8,7 +8,7 @@ range mode = 1..M;
 int S = ...;
 float d[time] = ...;
 
-float E_max[time] = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3];
+float E_max[time] = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4];
 
 float h[time] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 

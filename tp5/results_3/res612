@@ -1,0 +1,79 @@
+
+<<< setup
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 3 columns.
+MIP Presolve modified 11 coefficients.
+Reduced MIP has 68 rows, 108 columns, and 327 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,14 ticks)
+Found incumbent of value 12310,816000 after 0,00 sec. (0,27 ticks)
+Probing time = 0,00 sec. (0,09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 68 rows, 108 columns, and 327 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,09 ticks)
+Probing time = 0,00 sec. (0,09 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,16 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        12310,8160        0,0000       29  100,00%
+*     0+    0                         1080,0000        0,0000       29  100,00%
+      0     0      185,5891    15     1080,0000      185,5891       29   82,82%
+*     0+    0                          895,4025      185,5891       29   79,27%
+*     0+    0                          734,0975      185,5891       29   74,72%
+      0     0      289,2902    21      734,0975      Cuts: 42       66   60,59%
+*     0+    0                          692,5975      289,2902       66   58,23%
+      0     0      314,9483    24      692,5975      Cuts: 34       91   54,53%
+      0     0      344,6820    27      692,5975      Cuts: 28      126   50,23%
+      0     0      362,6101    21      692,5975      Cuts: 25      150   47,64%
+*     0+    0                          554,6212      362,6101      150   34,62%
+      0     0      370,6960    22      554,6212      Cuts: 18      177   33,16%
+      0     0      372,2900    23      554,6212      Cuts: 16      189   32,87%
+      0     0      372,6541    18      554,6212       Cuts: 6      199   32,81%
+      0     0      372,8273    18      554,6212       Cuts: 4      203   32,78%
+      0     0      372,9036    17      554,6212      Cuts: 12      208   32,76%
+      0     0      373,2371    16      554,6212   ZeroHalf: 1      211   32,70%
+*     0+    0                          509,8525      373,2371      211   26,80%
+      0     0      373,5282    18      509,8525      Cuts: 12      224   26,74%
+      0     0      374,3761    24      509,8525      Cuts: 17      235   26,57%
+      0     0      374,6857    22      509,8525      Cuts: 12      245   26,51%
+      0     0      375,0668    24      509,8525       Cuts: 9      259   26,44%
+      0     0      375,1550    23      509,8525       Cuts: 7      262   26,42%
+      0     0      375,2115    19      509,8525       Cuts: 7      267   26,41%
+      0     0      375,2396    26      509,8525       Cuts: 5      273   26,40%
+*     0+    0                          469,5462      375,2396      273   20,08%
+      0     2      375,2396    26      469,5462      375,2396      273   20,08%
+Elapsed time = 0,04 sec. (31,19 ticks, tree = 0,01 MB, solutions = 8)
+*    95+   42                          462,7275      402,4444     1676   13,03%
+*   161    34      integral     0      459,3800      426,5700     2485    7,14%
+*   186+   20                          453,5237      444,5837     2699    1,97%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  1
+Flow cuts applied:  44
+Mixed integer rounding cuts applied:  19
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0,04 sec. (30,61 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,02 sec. (13,73 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,06 sec. (44,34 ticks)
+##4 453.52375 189.7383333333334
+main returns 0
+
+<<< main
+
+
+<<< done
+

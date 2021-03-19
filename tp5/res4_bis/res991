@@ -1,0 +1,77 @@
+
+<<< setup
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 3 columns.
+Reduced MIP has 65 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,13 ticks)
+Found incumbent of value 20455,350000 after 0,00 sec. (0,26 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 65 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,09 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,14 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        20455,3500        0,0000       26  100,00%
+      0     0      115,3793    13    20455,3500      115,3793       26   99,44%
+*     0+    0                          650,0000      115,3793       26   82,25%
+*     0+    0                          577,6250      115,3793       26   80,03%
+      0     0      217,9545    14      577,6250      Cuts: 35       62   62,27%
+      0     0      237,4998    20      577,6250      Cuts: 30      100   58,88%
+      0     0      260,0249    22      577,6250      Cuts: 27      131   54,98%
+      0     0      267,5084    27      577,6250      Cuts: 25      161   53,69%
+*     0+    0                          543,5500      267,5084      161   50,78%
+      0     0      272,6216    22      543,5500      Cuts: 26      186   49,84%
+      0     0      274,6677    21      543,5500      Cuts: 23      205   49,47%
+      0     0      277,2677    27      543,5500      Cuts: 26      234   48,99%
+      0     0      277,8691    19      543,5500      Cuts: 14      245   48,88%
+      0     0      278,2894    20      543,5500      Cuts: 12      256   48,80%
+      0     0      278,3492    18      543,5500      Cuts: 15      259   48,79%
+      0     0      279,6357    22      543,5500       Cuts: 4      271   48,55%
+      0     0      280,2911    24      543,5500       Cuts: 9      280   48,43%
+      0     0      280,4320    21      543,5500       Cuts: 5      285   48,41%
+      0     0      280,6687    20      543,5500   Flowcuts: 7      292   48,36%
+      0     0      280,8201    19      543,5500       Cuts: 8      297   48,34%
+      0     0      280,8479    20      543,5500   Flowcuts: 7      302   48,33%
+      0     0      280,9136    20      543,5500   Flowcuts: 6      304   48,32%
+      0     0      281,7714    21      543,5500      Cuts: 11      321   48,16%
+      0     0      281,7904    21      543,5500   Flowcuts: 2      323   48,16%
+*     0+    0                          409,9667      281,7904      323   31,27%
+*     0+    0                          392,3875      281,7904      323   28,19%
+*     0+    0                          371,5417      281,7904      323   24,16%
+      0     2      281,7904    21      371,5417      281,7904      323   24,16%
+Elapsed time = 0,08 sec. (45,32 ticks, tree = 0,01 MB, solutions = 7)
+*     5+    5                          369,3333      282,7232      510   23,45%
+*    56+   21                          352,1500      296,5086     1228   15,80%
+*   295    64      integral     0      351,1750      326,7256     3685    6,96%
+*   319+   46                          343,2250      333,8411     3889    2,73%
+
+Cover cuts applied:  1
+Flow cuts applied:  63
+Mixed integer rounding cuts applied:  20
+
+Root node processing (before b&c):
+  Real time             =    0,07 sec. (44,76 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,04 sec. (18,46 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,11 sec. (63,22 ticks)
+##7 343.2250000000001 280.8166666666665
+main returns 0
+
+<<< main
+
+
+<<< done
+

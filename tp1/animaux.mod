@@ -26,7 +26,7 @@ float proba[sp][h][w] = ...;
 
 int c[h][w] = ...;
 
-/* probalème */
+/* problème */
 dvar boolean prot[h][w];
 
 dvar boolean central[h][w];

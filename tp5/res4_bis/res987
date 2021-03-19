@@ -1,0 +1,78 @@
+
+<<< setup
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 62 rows and 3 columns.
+Reduced MIP has 65 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,13 ticks)
+Found incumbent of value 21408,575000 after 0,00 sec. (0,26 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 65 rows, 108 columns, and 287 nonzeros.
+Reduced MIP has 48 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,09 ticks)
+Probing time = 0,00 sec. (0,06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,14 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        21408,5750        0,0000       26  100,00%
+      0     0      114,7284    13    21408,5750      114,7284       26   99,46%
+*     0+    0                          630,0000      114,7284       26   81,79%
+*     0+    0                          581,7750      114,7284       26   80,28%
+      0     0      223,4910    14      581,7750      Cuts: 35       60   61,58%
+      0     0      236,6491    18      581,7750      Cuts: 34       86   59,32%
+      0     0      261,6102    22      581,7750      Cuts: 24      107   55,03%
+*     0+    0                          557,2250      261,6102      107   53,05%
+      0     0      272,1804    26      557,2250      Cuts: 34      130   51,15%
+*     0+    0                          537,9500      272,1804      130   49,40%
+      0     0      275,8036    26      537,9500      Cuts: 18      146   48,73%
+      0     0      282,2718    24      537,9500      Cuts: 20      171   47,53%
+      0     0      282,8126    20      537,9500      Cuts: 19      183   47,43%
+      0     0      283,2370    27      537,9500      Cuts: 14      196   47,35%
+      0     0      283,6479    26      537,9500       Cuts: 9      202   47,27%
+      0     0      285,0855    28      537,9500      Cuts: 12      222   47,01%
+      0     0      285,5806    22      537,9500      Cuts: 16      238   46,91%
+      0     0      285,8938    21      537,9500      Cuts: 15      249   46,85%
+      0     0      285,9633    22      537,9500      Cuts: 16      256   46,84%
+      0     0      286,2829    21      537,9500      Cuts: 12      268   46,78%
+      0     0      286,4182    22      537,9500      Cuts: 10      272   46,76%
+      0     0      286,4807    25      537,9500   Flowcuts: 7      279   46,75%
+      0     0      286,6516    20      537,9500      Cuts: 11      287   46,71%
+*     0+    0                          428,3250      286,6516      287   33,08%
+*     0+    0                          382,3583      286,6516      287   25,03%
+      0     2      286,6516    20      382,3583      286,6516      287   25,03%
+Elapsed time = 0,06 sec. (39,86 ticks, tree = 0,01 MB, solutions = 7)
+*     4+    4                          379,1750      291,2404      427   23,19%
+*    15+   14                          374,1750      292,3173      726   21,88%
+*    15+   14                          372,5000      292,3173      726   21,53%
+*    52+   36                          368,2250      303,4549     1196   17,59%
+*   396+  112                          361,0750      342,0056     5599    5,28%
+*   485+   26                          359,5250      353,1750     6251    1,77%
+
+Cover cuts applied:  1
+Flow cuts applied:  70
+Mixed integer rounding cuts applied:  24
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    0,06 sec. (39,32 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,06 sec. (33,40 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,12 sec. (72,72 ticks)
+##7 359.525 303.1
+main returns 0
+
+<<< main
+
+
+<<< done
+
