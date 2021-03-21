@@ -25,7 +25,7 @@
 
 #define UNIF_01() (double)rand()/(double)RAND_MAX
 #define UNIF_ALPHA() 0.5 + UNIF_01()/2.
-#define RAND_INT(a, b) a + rand() % b
+#define RAND_INT(a, b) a + (rand() % (b))
 
 
 /* Ajuster la taille des float écrits */
