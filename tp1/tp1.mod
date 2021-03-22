@@ -65,20 +65,18 @@ subject to {
 
 float timing;
 
-execute B4{
+main {
   var before = new Date();
   timing = before.getTime();
-}
-
-main {
   thisOplModel.generate();
   cplex.solve();
   thisOplModel.postProcess();
-}
-
-execute AFTER{
   var after = new Date();
   timing = after.getTime() - timing;
+  var n = thisOplModel.n;
+  var p = thisOplModel.p;
+  var q = thisOplModel.q;
+
   writeln("##", n, " ", p+q, " ",timing);
 }
 

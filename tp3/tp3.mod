@@ -76,22 +76,22 @@ subject to {
 
 float timing;
 
-execute B4{
-  var before = new Date();
-  timing = before.getTime();
-}
 
 main {
+  var before = new Date();
+  timing = before.getTime();
   thisOplModel.generate();
   cplex.solve();
   thisOplModel.postProcess();
-}
-
-execute AFTER{
   var after = new Date();
   timing = after.getTime() - timing;
+  var N = thisOplModel.N;
+  var G = thisOplModel.G;
+  var A = thisOplModel.A;
+  var T = thisOplModel.T;
   writeln("##", N, " ", G, " ", A, " ", T, " ", timing);
 }
+
 
 /*
 execute SUPREME_DISPLAY_OF_TALENT{

@@ -59,22 +59,17 @@ subject to {
 
 float timing;
 
-execute B4{
+main {
   var before = new Date();
   timing = before.getTime();
-}
-
-main {
   thisOplModel.generate();
   cplex.solve();
   thisOplModel.postProcess();
-}
-
-execute AFTER{
   var after = new Date();
   timing = after.getTime() - timing;
-  writeln("##", n," ", timing);
+  writeln("##", thisOplModel.n," ", timing);
 }
+
 /*
 execute SUPREME_DISPLAY_OF_TALENT {
   write("Plan de coupe :");

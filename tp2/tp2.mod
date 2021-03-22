@@ -68,17 +68,15 @@ subject to {
 
 float timing;
 
-execute B4{
-  var before = new Date();
-  timing = before.getTime();
-}
 
 main {
+  var before = new Date();
+  timing = before.getTime();
   nbiter = 1;
   write("\n\n");
-  write("########### ITER");
+  write("%%%%%%%% ITER ");
   write(nbiter);
-  write(" ###########\n\n");
+  write("%%%%%%%%\n\n");
   
   thisOplModel.generate();
   cplex.solve();
@@ -89,9 +87,9 @@ main {
   while(cf - thisOplModel.lambda*cg < 0){
 		nbiter++;
     write("\n\n");
-    write("########### ITER");
+    write("%%%%%% ITER");
     write(nbiter);
-    write(" ###########\n\n");
+    write("%%%%%%\n\n");
     lambda = cf/cg;
 		
 		var sub = new IloOplDataElements();
@@ -116,14 +114,12 @@ main {
     cf = thisOplModel.f;
     cg = thisOplModel.g;
 	}
-}
-
-execute AFTER{
   var after = new Date();
   timing = after.getTime() - timing;
-  writeln("##", n, " ",timing);
+  writeln("##", master.n, " ",timing);
 }
-/*
+
+
 execute DISPLAY{
   
   write("\n");
@@ -154,4 +150,3 @@ execute DISPLAY{
   write(f/g);
   write("\n\n");
 }
-*/

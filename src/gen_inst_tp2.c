@@ -44,9 +44,9 @@ int main(){
       gen_value(stream, (void*) &n, 1, "n");
 
       /* B is around 9/10 Amin * mean(c_ij) */
-      B = Amin*54;
-      gen_value(stream, (void*) &Amin, 1, "Amax");
-      gen_value(stream, (void*) &Amax, 1, "Amin");
+      B = Amin*48;
+      gen_value(stream, (void*) &Amin, 1, "Amin");
+      gen_value(stream, (void*) &Amax, 1, "Amax");
       gen_value(stream, (void*) &B, 1, "B");
       gen_value(stream, (void*) &lambda, 0, "lambda");
 
