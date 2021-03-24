@@ -1,5 +1,5 @@
 SRC=src/
-TARGET = gen_inst_tp2.out gen_inst_tp3.out gen_inst_tp4.out
+TARGET = gen_inst_tp1.out gen_inst_tp2.out gen_inst_tp3.out gen_inst_tp4.out
 
 all : $(TARGET)
 

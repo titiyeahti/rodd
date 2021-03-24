@@ -1,0 +1,13 @@
+reset session 
+set terminal png size 800, 600
+FILE = "tp1.dat"
+set output "plot1.png"
+set title "Temps d'exécution en fonction de la taille (tp1)"
+set xlabel "n"
+set ylabel "time(s)"
+set logscale y 10
+set datafile missing "NaN"
+plot FILE u ($2==4 ? $1 : NaN):($3/1000) w p ti "p = 2", \
+     FILE u ($2==6 ? $1 : NaN):($3/1000) w p ti "p = 3", \
+     FILE u ($2==8 ? $1 : NaN):($3/1000) w p ti "p = 4"
+

@@ -1,0 +1,13 @@
+reset session 
+set terminal png size 800, 600
+F1 = "tp4_1.dat"
+F3 = "tp4_3.dat"
+set output "plot4.png"
+set title "Temps d'exécution en fonction de la taille (tp4)"
+set xlabel "n"
+set ylabel "time(s)"
+set logscale y 10
+set datafile missing "NaN"
+plot F1 u 1:($2/1000) w p ti "Première approche", \
+     F3 u 1:($2/1000) w p ti "Approche TU"
+

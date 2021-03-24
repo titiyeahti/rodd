@@ -22,11 +22,13 @@ fi
 
 echo $tp $mod
 
-i=0
 for f in instances/$tp/*
-do 
+do
+  S=$(date +%s.%N)
   ~/CPLEX/opl/bin/x86-64_sles10_4.1/oplrun $tp/$mod.mod $f | 
     \grep "##" | cut -c3- >> plot_data/$mod.dat
-  let i++
-  echo $i
+  E=$(date +%s.%N)
+  basename $f
+  DIFF=$(echo "$E - $S" | bc)
+  echo $DIFF
 done

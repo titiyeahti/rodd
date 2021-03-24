@@ -30,7 +30,7 @@ int main(){
   FILE* stream;
   char buffer[1000];
 
-  for(n=10; n<75; n+=5){
+  for(n=10; n<41; n+=2){
     Amin = (4*n*n)/10;
     Amax = (5*n*n)/10;
     int dims[2] = {n, n};

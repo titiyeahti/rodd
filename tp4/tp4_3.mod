@@ -48,6 +48,7 @@ subject to {
       y[i][j][4] >= x[i][j] + x[i][j-1] - 1;
     }
 
+  //sum(i in h) sum(j in w) x[i][j] >= 60;
   /* contrainte de positivité de y et x \in [0,1] pour la 
    relaxation */
   forall (i in H)
@@ -76,7 +77,6 @@ main {
 }
 
 
-/*
 execute SUPREME_DISPLAY_OF_TALENT {
   write("Plan de coupe :");
   write("\n");
@@ -92,4 +92,3 @@ execute SUPREME_DISPLAY_OF_TALENT {
   write(cost);
   write("\n");
 }
-*/

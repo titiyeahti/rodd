@@ -46,7 +46,7 @@ subject to {
   sum(i in father) x[i] == N;
 
   forall(i in tot)
-    x[i] <= 3;
+    x[i] <= 2;
 
   forall(i in tot)
     x[i] >= 0;
@@ -93,7 +93,6 @@ main {
 }
 
 
-/*
 execute SUPREME_DISPLAY_OF_TALENT{
   write("\nNombre de gosses par personnes\n")
   for(var i in tot){
@@ -114,4 +113,3 @@ execute SUPREME_DISPLAY_OF_TALENT{
   }
   write("\n\n");
 }
-*/

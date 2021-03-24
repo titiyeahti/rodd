@@ -1,0 +1,11 @@
+reset session 
+set terminal png size 800, 600
+FILE = "tp2.dat"
+set output "plot2.png"
+set title "Temps d'exécution en fonction de la taille (tp2)"
+set xlabel "n"
+set ylabel "time(s)"
+set logscale y 10
+set xrange [9:15]
+plot FILE u 1:($2/1000) w p ti "temps d'exécution"
+

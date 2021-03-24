@@ -70,7 +70,6 @@ main {
   writeln("##", thisOplModel.n," ", timing);
 }
 
-/*
 execute SUPREME_DISPLAY_OF_TALENT {
   write("Plan de coupe :");
   write("\n");
@@ -82,4 +81,3 @@ execute SUPREME_DISPLAY_OF_TALENT {
     write("\n");
   }
 }
-*/
