@@ -6,6 +6,7 @@ Auteurs : Yuli Daune-Funato, Thibaut Milhaud
 
 Ce dépôt contient tous les tps de l'UE RODD à l'exception de celui réalisé sur exel.
 Nous allons cependant nous concentrer sur les 4 premier tps.
+D'ailleurs `rapport.pdf` ne traite que ces 4 premiers tps.
 
 #### Modèles OPL et instances de base
 
@@ -30,7 +31,7 @@ La encore pour simplifier les manipulation, le projet contient 3 script bash :
 
 **REMARQUE** : Dans `run_inst.sh` la commande appelée est liée à mon installation de CPLEX. Pensez à la modifier.
 
-#### Usage
+### Usage
 
 Pour compiler les générateurs :
 ```{sh}
